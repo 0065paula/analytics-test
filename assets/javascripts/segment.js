@@ -1,6 +1,6 @@
 $('#logIn').click(function(event) {
     var userNameValue = $('#email').val();
-    analytics.track('Identify', {
+    analytics.track('Logged In', {
     username: userNameValue
   });
 });
