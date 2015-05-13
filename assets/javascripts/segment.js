@@ -4,3 +4,7 @@ $('#logIn').click(function(event) {
     username: userNameValue
   });
 });
+
+$('#createProject').click(function(event) {
+    analytics.track('Create Project');
+});
