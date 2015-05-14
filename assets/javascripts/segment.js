@@ -26,7 +26,7 @@ $('#logIn').click(function(event) {
      }
    }
     var UID = IDGenerator();
-    analytics.track('identify', {
+    analytics.track('Identify', {
       userID: UID,
       traits: {
         username: userNameValue
