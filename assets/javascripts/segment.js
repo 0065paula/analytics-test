@@ -27,10 +27,7 @@ $('#logIn').click(function(event) {
    }
     var UIDG = new IDGenerator();
     analytics.track('Identify', {
-      userID: UIDG.generate(),
-      traits: {
-        username: userNameValue
-      }
+      userID: UIDG.generate()
     })
     $('#createProject').removeAttr('disabled');
 });
