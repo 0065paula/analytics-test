@@ -25,9 +25,9 @@ $('#logIn').click(function(event) {
        return id;
      }
    }
-    var UID = IDGenerator();
+    var UIDG = new IDGenerator();
     analytics.track('Identify', {
-      userID: UID,
+      userID: UIDG.generate(),
       traits: {
         username: userNameValue
       }
