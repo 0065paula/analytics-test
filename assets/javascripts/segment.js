@@ -33,7 +33,9 @@ $('#logIn').click(function(event) {
 });
 
 $('#createProject').click(function(event) {
-    analytics.track('Create Project');
+    analytics.track('Create Project', {
+      projectName: $('#projectName').val()
+    });
     $('#invite').removeAttr('disabled');
     $('#sdk').removeAttr('disabled');
 });
